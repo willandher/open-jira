@@ -1,9 +1,11 @@
 import {Card, CardContent, CardHeader, Grid} from "@mui/material";
 import {Layout} from "@/components/layouts";
 import {EntryList, NewEntry} from "@/components/ui";
+import * as process from "process";
 
 
 export default function HomePage() {
+    console.log(process.env.NEXT_PUBLIC_CLIENT_KEY)
     return (
         <Layout title='Home - OpenJira'>
             <Grid container spacing={2}>
